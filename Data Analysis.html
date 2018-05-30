@@ -134,7 +134,37 @@ function myFunction2() {
     <p> The purpose of the website was also to explore some defining factors in the quality of the wine.
     Therefore, humidity (as a percentage) and rainfall (by inch) were tested through regression to see if a favourable climate produced some flavourable wine. </p>
     <br>
-	    
+	
+	    	    
+	    <style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
+<div class="row">
+  <div class="column">
+    <img src="Average Humidity to Average price correlation.png" alt="Average Humidity to Average price correlation" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Average Humidity to Average Value For Money Score correlation.png" alt="Average Humidity to Average Value For Money Score correlation" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Average Humidity to Averoge Score correlation.png" alt="Average Humidity to Averoge Score correlation" style="width:100%">
+  </div>
+</div>
+	    <br>
 <style>
 * {
     box-sizing: border-box;
@@ -154,18 +184,15 @@ function myFunction2() {
 
 <div class="row">
   <div class="column">
-    <img src="Average Rainfall to Average price correlation.png" alt="Average Rainfall to Average price correlation" style="width:100%">
-  </div>
-  <div class="column">
     <img src="Average Rainfall to Average Score correlation.png" alt="Average Rainfall to Average Score correlation" style="width:100%">
   </div>
   <div class="column">
     <img src="Average Rainfall to Average Value For Money Score correlation.png" alt="Average Rainfall to Average Value For Money Score correlationn" style="width:100%">
   </div>
 </div>
-	<p>We were considering possible impact of the climate on the wine scores and value for money indicators but we did not find any specific correlation. Probable causes for that are as follows:
+	<p>We were considering possible impact of the climate on the wine scores and value for money indicators but we did not find any specific correlation. Probable causes for that are as follows:</p>
 <br>
-	Subjective form of grading by tasters</p>
+<p>-    Subjective form of grading by tasters</p>
 <p>-	Pricing’s most important factor is cost of the ingredients and raw materials, cost of work, cost of storage, cost of promotion and others. Therefore price is not strongly correlated with wine score as it varies across the dataset.</p>
 <p>-	We considered limited climate datasets: rainfall and humidity which might be not enough to perform quality correlation.</p>
 
