@@ -11,6 +11,17 @@ h1 {
     color: maroon;
     margin-left: 40px;
 }
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 </style>
     <meta charset="UTF-8">
     <title>Data Analysis</title>
@@ -132,7 +143,24 @@ function myFunction2() {
     <h7><b>Climate and Quality</b></h7>
     <br>
     <p> The purpose of the website was also to explore some defining factors in the quality of the wine.
-    Therefore, humidity (as a percentage) and rainfall (by inch) were tested through regression to see if a favourable climate produced some flavourable wine. </p>
+    Therefore, humidity (as a percentage) and rainfall (by inch) were tested through regression to see if a favourable climate produced some flavourable wine.
+	These three factors are often conducive to a good crop yield, although there are many which can affect this, these three were chosen for their signficant role 
+	    when it comes to grape growth. A semi-arid climate is essential to grape growth and therefore high humidity, low sunshine exposure and high levels of rainfall
+	    can be defining factors in poor crop yield when it comes to growing grapes.</p>
+	    <p>The results of the regression can be seen below.</p>
+	    <table>
+  <tr>
+	  <th></th>
+    <th>Score-Rainfall</th>
+    <th>Score-Sunshine Exp.</th>
+    <th>Score-Humidity </th>
+  </tr>
+  <tr>
+	  <td>R Sq Value</td>
+    <td>0.024</td>
+    <td>0.073</td>
+    <td>0.03</td>
+  </tr>
     <br>
 	
 	    	    
@@ -186,10 +214,6 @@ function myFunction2() {
   <div class="column">
     <img src="Average Rainfall to Average Score correlation.png" alt="Average Rainfall to Average Score correlation" style="width:100%">
   </div>
-	<!--div class="column">
-    <img src="Average Rainfall to Average price correlation.png" alt="Average Rainfall to Average price correlation" style="width:100%">
-  </div-->
-	
   <div class="column">
     <img src="Average Rainfall to Average Value For Money Score correlation.png" alt="Average Rainfall to Average Value For Money Score correlationn" style="width:100%">
   </div>
