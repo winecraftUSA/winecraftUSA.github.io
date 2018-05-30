@@ -35,14 +35,50 @@ h1 {
     improve the quality of wine being output by a state. Therefore the analysis was broken down
     into the following sections. </p>
     <br>
-    <h4> Price and Score </h4>
+    <h4><b>Price and Score</b> </h4>
     <br>
     <p> Price and Score are two key variables in this data analysis. A functional part of this
     website is to show prices and scores of certain areas which was achieved through the mapping
     of the data. Therefore users are able to see which states score the best or which state is
     the priciest/cheapest. </p>
+    <button onclick="myFunction1()">Map of Scores</button>
+
+<div id="scoresDIV">
+  <iframe src="https://createaclickablemap.com/map.php?&id=71414&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+  <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+</div>
+<script>
+function myFunction1() {
+    var x = document.getElementById("scoresDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<br>
+<br>
+
+<button onclick="myFunction2()">Map of Prices</button>
+
+<div id="priceDIV">
+  <iframe src="https://createaclickablemap.com/map.php?&id=71416&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+  <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+</div>
+<script>
+function myFunction2() {
+    var x = document.getElementById("priceDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
     <br>
-    <h5> Value for Money </h5>
+    <h5><b> Value for Money</b> </h5>
     <p> Value for money is a concept that was created for the specific use of this website. It's
     purpose is too show how good the quality of the wine is for the price paid. It would do this by
     identifying the difference in a wine scoring 90 points for the price of $30 compared to a wine of
@@ -50,24 +86,56 @@ h1 {
     values of price and score.</p>
     <p>Here you can find full table with Value for money scores for each state</p><a target="_blank" href="Top 10 Value for money Wines.csv">Top 10 Value for money Wines</a>
     <br>
-    <h6>Common Flavours</h6>
+    <button onclick="myFunction3()">Map of Value for Money</button>
+
+    <div id="VfMDIV">
+      <iframe src="https://createaclickablemap.com/map.php?&id=71415&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+      <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+    </div>
+    <script>
+    function myFunction3() {
+        var x = document.getElementById("VfMDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+
+    <br>
+    <h6><b>Common Flavours</b></h6>
     <p> An integral part of our analysis was to produce a map of flavours. It was a key aim to be
     able to show the user where in the US they can expect certain flavours. Using python, it was
     possible to chop up the review data and count the most commonly reoccurring flavours that reviewers
     were experiencing whilst tasting the wine. Based on this, the flavours occurring the most can
     be mapped into a flavour profile for the US. The flavour profile of the US can be seen below in the map</p>
-    <iframe src="https://createaclickablemap.com/map.php?&id=71396&maplocation=false&online=true" width="500" height="292" style="border: none;"></iframe>
-<script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
-<p> Yellow states show data pertaining to the flavour profile of that state</p>
-<p> Grey States had no available data</p>
+<br>
+    <button onclick="myFunction4()">Flavour Profile of the US</button>
+
+    <div id="FPDIV">
+      <iframe src="https://createaclickablemap.com/map.php?&id=71397&maplocation=false&online=true" width="800" height="467" style="border: none;"></iframe>
+      <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+    </div>
+    <script>
+    function myFunction4() {
+        var x = document.getElementById("FPDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
     <br>
-    <h7>Climate and Quality</h7>
+    <br>
+    <h7><b>Climate and Quality</b></h7>
     <br>
     <p> The purpose of the website was also to explore some defining factors in the quality of the wine.
     Therefore, sunshine exposure (as a percentage), humidity (as a percentage) and rainfall (by inch)
     were tested through regression to see if a favourable climate produced some flavourable wine. </p>
     <br>
-        <h3>Highlights of the analysis</h3>
+        <h3><b>Highlights of the analysis</b></h3>
         <p>According to a series of statistics for the U.S wine market of recent years, the wine market is at a growth period as a result of the trends of demographic shift of the United States.
 		Euromonitor International (2017) indicates that the ageing of the most loyal and target consumers of wine results in the differences for the wine industry and market.
 		The significance of millennials and generation X is flourishing and the demand for high-quality and premium wines at an affordable price level is highlighted as their consumption concepts are different with older
@@ -75,7 +143,7 @@ h1 {
         <p>This study was limited to the perceptions of a range of master sommeliers collected from WineEnthusiast (2018) website as to the reviews and descriptions of the high-quality wines of the U.S that are evaluated based
 		on the price and points assigned to them. For the purpose of the study, the high-quality or top wines are defined as the wines that has points over 80 out of 100.</p>
 
-	   <h3>Major findings</h3>
+	   <h3><b>Major findings</b></h3>
         <p>We can see that the states of Oregon, Rhode Island, and Washington break past the 92-point mark when it comes to value for money, placing in the top three for the average value for money.
 		Rhode Island comes out on top with the highest average quality wines with low average costs. Washington and Oregon, place 2nd and 3rd, producing high quality wines, yet with higher costing wine.
 		New York manages to also break the 92-point mark, but with lower quality wine and much cheaper prices.
